@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
                 {"Popuri", "Blue", "Chen", "Cam", "Alex", "Carl", "Neil", "Rod", "Soseki", "Allen", "Sanjay", "Amir",
                         "Felicity", "Iroha", "Tina", "Michelle", "Yuri"};
 
-        ListAdapter newAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
+        //ListAdapter newAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
+
+        ListAdapter newAdapter = new CustomAdapter(this, names);
 
         // list view
         android.widget.ListView listView = (android.widget.ListView) findViewById(R.id.list_view);
