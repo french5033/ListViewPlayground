@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListViewPlayground</string>
+    <string name="textview">TextView</string>
+</resources>
